@@ -75,7 +75,7 @@ Now that the delete functionality is working, senior leadership wishes to stop u
 
 - Using a fibonacci scale of 1, 2, 3, 5, 8 where 1 is the least amount of work, 8 is most, rate our current delete functionality.  Whatever value you assign, use that as a basis for the next questions:
 - Scenario 1: Clicking Delete button redirects to a delete page where user can then Confirm whether they truly want to delete.  If confirmed, it deletes it
-- Scenario 2: Clicking Delete button opens a bootstrap modal component where user can then Confirm whether they truly want to delete.  If confirmed, it deletes it
+- Scenario 2: Clicking Delete button opens a [bootstrap modal component](https://www.tutorialrepublic.com/snippets/designs/delete-confirmation-modal.png) where user can then Confirm whether they truly want to delete.  If confirmed, it deletes it
 - Exercise #1: Give a fibonacci value for Scenario 1 on how hard/difficult/long it might be to complete this task
 - Exercise #2: Give a fibonacci value for Scenario 2 on how hard/difficult/long it might be to complete this task
 
