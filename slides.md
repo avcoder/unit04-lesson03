@@ -72,6 +72,7 @@ transition: slide-left
 # Agile / Scrum Exercise: Storybook Points
 
 Now that the delete functionality is working, senior leadership wishes to stop using the confirm dialog box and replace it with something that looks better / is branded along with the rest of the app.  
+
 - Using a fibonacci scale of 1, 2, 3, 5, 8 where 1 is the least amount of work, 8 is most, rate our current delete functionality.  Whatever value you assign, use that as a basis for the next questions:
 - Scenario 1: Clicking Delete button redirects to a delete page where user can then Confirm whether they truly want to delete.  If confirmed, it deletes it
 - Scenario 2: Clicking Delete button opens a bootstrap modal component where user can then Confirm whether they truly want to delete.  If confirmed, it deletes it
