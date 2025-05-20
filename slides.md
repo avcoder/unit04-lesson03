@@ -84,9 +84,10 @@ Now that the delete functionality is working, senior leadership wishes to stop u
 transition: slide-left
 ---
 
-# Exercise: Implement Delete functionality using Bootstrap
+# Exercise: Implement Delete functionality
 
-Implement the Delete functionality
+- Based on your discussions on the previous slide, implement the Delete functionality using Bootstrap
+- (in the style of Gameshow Amazing Race)
 
 ---
 layout: image-right
