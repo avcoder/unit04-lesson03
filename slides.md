@@ -16,11 +16,11 @@ transition: slide-left
 mdc: true
 ---
 
-# EJS
-Full-Stack Development - part 2/8
-- [ ] Continue Full-Stack Setup (MVC)
-- [ ] EJS Syntax and Templating
-- [ ] Incorporate Bootstrap
+# Full-Stack Development
+Full-Stack Development - part 3/8
+- [ ] Serve Static files
+- [ ] Set up Delete route
+- [ ] Designing with Bootstrap
 
 <div class="abs-br m-6 text-xl">
   <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn">
@@ -141,10 +141,10 @@ class: text-left
 # 10 minute break
 
 🍦 Cool Tips, Trends and Resources:
-- 🕑 [The Problem with Time & Timezones](https://www.youtube.com/watch?v=-5wpm-gesOY)
-- 😬 [Next.js App Router Migration](https://www.flightcontrol.dev/blog/nextjs-app-router-migration-the-good-bad-and-ugly)
-- 💾 [Surf the Web Like It's 1999](https://billsworld.neocities.org/)
-- 🌶️ [HTMX](https://htmx.org/)
+- 💾 [Local First](https://www.inkandswitch.com/essay/local-first/)
+- 😱 [Serverless Horrors](https://serverlesshorrors.com/)
+- 🩳 [Overview of middleware](https://x.com/syntaxfm/status/1772350906698256578)
+- 👖 [Pocketbase](https://pocketbase.io/)
 
 <br>
 <hr>
