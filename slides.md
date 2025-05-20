@@ -69,7 +69,7 @@ transition: slide-left
 transition: slide-left
 ---
 
-# Agile / Scrum Exercise: Storybook Points
+# Exercise: Agile / Scrum & Storybook Points
 
 Now that the delete functionality is working, senior leadership wishes to stop using the confirm dialog box and replace it with something that looks better / is branded along with the rest of the app.  
 
@@ -78,6 +78,14 @@ Now that the delete functionality is working, senior leadership wishes to stop u
 - Scenario 2: Clicking Delete button opens a [bootstrap modal component](https://www.tutorialrepublic.com/snippets/designs/delete-confirmation-modal.png) where user can then Confirm whether they truly want to delete.  If confirmed, it deletes it
 - Exercise #1: Give a fibonacci value for Scenario 1 on how hard/difficult/long it might be to complete this task
 - Exercise #2: Give a fibonacci value for Scenario 2 on how hard/difficult/long it might be to complete this task
+
+---
+transition: slide-left
+---
+
+# Exercise: Implement Delete functionality using Bootstrap
+
+Implement the Delete functionality
 
 ---
 transition: slide-left
