@@ -88,6 +88,7 @@ transition: slide-left
 
 - Based on your discussions on the previous slide, implement the Delete functionality using Bootstrap
 - (in the style of Gameshow Amazing Race)
+   - if you come across a blocker, document it
 
 ---
 layout: image-right
