@@ -69,7 +69,7 @@ transition: slide-left
 transition: slide-left
 ---
 
-# Exercise: Agile / Scrum & Storybook Points
+# Exercise: Agile / Scrum and Storybook Points
 
 Now that the delete functionality is working, senior leadership wishes to stop using the confirm dialog box and replace it with something that looks better / is branded along with the rest of the app.  
 
