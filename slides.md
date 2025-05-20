@@ -88,18 +88,6 @@ transition: slide-left
 Implement the Delete functionality
 
 ---
-transition: slide-left
----
-
-# Serve static files
-Add upload photo functionality
-
-- `npm i jimp multer uuid`
-- update truckModel.js to include `photo: String,`
-- update router.js to include an `truckController.upload` and `truckController.resize`
-- in truckController.js, create `upload` and `resize` functions
-
----
 layout: image-right
 transition: slide-left
 image: /assets/scott.png
@@ -125,6 +113,18 @@ class: text-left
 <!-- 
 - take attendance
 -->
+
+---
+transition: slide-left
+---
+
+# Serve static files
+Add upload photo functionality
+
+- `npm i jimp multer uuid`
+- update truckModel.js to include `photo: String,`
+- update router.js to include an `truckController.upload` and `truckController.resize`
+- in truckController.js, create `upload` and `resize` functions
 
 ---
 transition: slide-left
