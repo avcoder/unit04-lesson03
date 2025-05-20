@@ -37,8 +37,8 @@ transition: slide-left
 
 # Review
 
-- MVC: Recap our folder structure
-- EJS website: https://ejs.co/
+- Bootstrap refresher
+- POST vs PUT for editing?
 - Foodtruck template Repo: https://github.com/avcoder/foodtruck-template
 
 
@@ -46,88 +46,7 @@ transition: slide-left
 transition: slide-left
 ---
 
-# GET all Foodtrucks
-
-- in /controllers/truckController.js:
-  ```js
-  const getTrucks = async (req, res) => {
-    const trucks = await truckHandler.getAllTrucks();
-    res.render("trucks", { title: "All Trucks", trucks });
-  };
-  ```
-- in /handlers/truckHandler.js:
-  ```js
-  const getAllTrucks = async () => {
-    return await Truck.find().lean();
-  };
-
-  export default {
-   getAllTrucks,
-   createTruck
-  }
-  ```
-- in /routes/router.js:
-  ```js
-  router.get("/", truckController.getTrucks);
-  router.get("/trucks", truckController.getTrucks);
-  ```
-- create /views/trucks.ejs and /views/components/truck.ejs
-
-
----
-transition: slide-left
----
-
-# Add Bootstrap and EJS partials
-
-- in app.js:
-  ```js
-  app.use(
-    "/css",
-    express.static(path.join(__dirname, "node_modules/bootswatch/dist/sketchy"))
-  );
-  app.use(
-    "/js",
-    express.static(path.join(__dirname, "node_modules/bootstrap/dist/js"))
-  );
-  ```
-- in routes/router.js:
-  ```js
-  router.get("/", truckController.homePage);
-  ```
-- create /views/components/truck.ejs, header.ejs, footer.ejs, trucks.ejs
-
----
-transition: slide-left
----
-
-# Add EJS partials and Bootstrap
-Check out 
-- in app.js:
-  ```js
-  app.use(
-    "/css",
-    express.static(path.join(__dirname, "node_modules/bootswatch/dist/sketchy"))
-  );
-  app.use(
-    "/js",
-    express.static(path.join(__dirname, "node_modules/bootstrap/dist/js"))
-  );
-  ```
-- Let's use a free Bootstrap theme from [Bootswatch](https://bootswatch.com/) 
-- Implement partials (ex: header.ejs and footer.ejs)
-- Use a Bootstrap card component to display the truck data and implement it as a component
-
----
-transition: slide-left
----
-
-# Exercise
-
-- Modify home.ejs such that it GETs all the foodtruck data (similar to trucks.ejs), but displays the data in the form of a Bootstrap table (columns may include: Truck Name, Description, Tags, Url, Edit, Delete)
-- Remember to include any partials and/or components
-- Edit button for each table row should be an anchor tag whose href = `/truck/<_id from mongodb goes here>/edit`
-- Delete button for each table row should be an anchor tag whose href = `/truck/<_id from mongodb>/delete`
+# t3est
 
 
 ---
@@ -157,35 +76,6 @@ class: text-left
 - take attendance
 -->
 
----
-transition: slide-left
----
-
-# Adjust Header and Footer
-
-- fix footer copy
-- make header look nicer with its own nav menu and search box
-- add register and login links to menu
-
----
-transition: slide-left
----
-
-# Make addTruck form using Bootstrap
-
-- Using [Bootstrap Forms](https://getbootstrap.com/docs/5.3/forms/overview/) create a form to add a foodtruck
-
----
-transition: slide-left
----
-
-# Exercise: make editTruck form using Bootstrap
-
-- Using [Bootstrap Forms](https://getbootstrap.com/docs/5.3/forms/overview/) create a form to edit a foodtruck
-
----
-transition: slide-left
----
 
 # Set up connect-flash
 
@@ -217,3 +107,5 @@ transition: slide-left
 # Homework
 
 - Start working on your midterm note-taking app
+- Exercise: Do a basic [recipe app](https://courses.circuitstream.com/d2l/le/lessons/9514/topics/49836)
+- Exercise: Do a [book inventory app](https://courses.circuitstream.com/d2l/le/lessons/9514/topics/49838)
