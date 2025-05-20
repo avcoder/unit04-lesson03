@@ -18,9 +18,9 @@ mdc: true
 
 # Full-Stack Development
 Full-Stack Development - part 3/8
-- [ ] Serve Static files
 - [ ] Set up Delete route
 - [ ] Designing with Bootstrap
+- [ ] Serve Static files 
 
 <div class="abs-br m-6 text-xl">
   <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn">
@@ -35,19 +35,61 @@ Full-Stack Development - part 3/8
 transition: slide-left
 ---
 
-# Review
+# Recap
 
 - Bootstrap refresher
 - POST vs PUT for editing?
 - Foodtruck template Repo: https://github.com/avcoder/foodtruck-template
-
+- `u.icon('star')` vs `<img src="star.svg" alt="">`
 
 ---
 transition: slide-left
 ---
 
-# t3est
+# DELETE route
 
+- should we use POST or DELETE?
+- if choose DELETE:
+   - `npm i method-override` and `app.use(methodOverride("_method"))`
+   - in home.ejs, replace Delete button:
+   ```html
+    <form
+      method="POST"
+      action="/trucks/<%= truck._id %>?_method=DELETE"
+      onsubmit="return confirm('Are you sure?')"
+    >
+      <button class="btn btn-danger">Delete</button>
+    </form>
+   ``` 
+- update router to include `router.delete`
+- update truckController.js to include `deleteTruck` function
+- update truckHandler.js to include `deleteTruck` function
+
+---
+transition: slide-left
+---
+
+# Agile / Scrum Exercise: Storybook Points
+
+Now that the delete functionality is working, senior leadership wishes to stop using the confirm dialog box and replace it with something that looks better / is branded along with the rest of the app.  
+- Using a fibonacci scale of 1, 2, 3, 5, 8 where 1 is the least amount of work, 8 is most, rate our current delete functionality.  Whatever value you assign, use that as a basis for the next questions:
+- Scenario 1: Clicking Delete button redirects to a delete page where user can then Confirm whether they truly want to delete.  If confirmed, it deletes it
+- Scenario 2: Clicking Delete button opens a bootstrap modal component where user can then Confirm whether they truly want to delete.  If confirmed, it deletes it
+
+Exercise #1: Give a fibonacci value for Scenario 1 on how hard/difficult/long it might be to complete this task
+Exercise #2: Give a fibonacci value for Scenario 2 on how hard/difficult/long it might be to complete this task
+
+---
+transition: slide-left
+---
+
+# Serve static files
+Add upload photo functionality
+
+- `npm i jimp multer uuid`
+- update truckModel.js to include `photo: String,`
+- update router.js to include an `truckController.upload` and `truckController.resize`
+- in truckController.js, create `upload` and `resize` functions
 
 ---
 layout: image-right
@@ -76,6 +118,9 @@ class: text-left
 - take attendance
 -->
 
+---
+transition: slide-left
+---
 
 # Set up connect-flash
 
