@@ -99,8 +99,8 @@ transition: slide-left
 ---
 layout: image-right
 transition: slide-left
-image: /assets/scott.png
-backgroundSize: 400px 170px
+image: /assets/cj.png
+backgroundSize: 400px 300px
 class: text-left
 ---
 
