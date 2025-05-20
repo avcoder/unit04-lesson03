@@ -85,12 +85,13 @@ transition: slide-left
 ---
 
 # Exercise: Implement new Delete functionality
+30 mins
 
 - Based on your discussions on the previous slide, implement the Delete functionality using Bootstrap
 - (in the style of Gameshow Amazing Race)
    - if you come across a blocker, document it
    - can use chatGPT to help
-- CRITERIA:
+- SUCCESS CRITERIA:
    1. Can you simply display the delete page/modal?
    1. Upon clicking the Cancel button, does it go back to the main page or redirect to '/'
    1. Upon clicking Delete button, does it delete then route back to '/'.  The screen should reflect the removal of that previous food truck.
